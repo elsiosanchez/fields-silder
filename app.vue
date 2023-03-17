@@ -1,3 +1,3 @@
 <template>
-  <FieldSilder :value="10" :range="true" />
+  <FieldSilder :value="[4, 8]" :range="true" :max="10" />
 </template>
