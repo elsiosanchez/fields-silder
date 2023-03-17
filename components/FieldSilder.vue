@@ -1,6 +1,5 @@
 <template>
   <div class="demo-progress">
-    {{ currentValue }}
     <el-slider
       v-model="currentValue"
       :show-stops="showStops"
@@ -18,7 +17,7 @@
 import { computed, ref } from 'vue';
 const props = defineProps({
   value: {
-    type: Number | Array,
+    type: Number,
     required: true,
     default: 0,
   },
